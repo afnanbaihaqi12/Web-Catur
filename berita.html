@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Catur Online</title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="nav-logo">
+                <p>LOGO</p>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="home.html" class="link">Home</a></li>
+                    <li><a href="berita.html" class="link active">Berita</a></li>
+                </ul>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <article>
+            <h3>Tips Catur</h3>
+            <p>Isi ...</p>
+        </article>
+
+        <article>
+            <h3>Peraturan catur</h3>
+            <p>Isi ...</p>
+        </article>
+    </div>
+    <script>
+        function myMenuFunction() {
+            var navMenu = document.getElementById("navMenu");
+            navMenu.className = (navMenu.className === "nav-menu") ? "nav-menu responsive" : "nav-menu";
+        }
+    </script>
+</body>
+</html>
